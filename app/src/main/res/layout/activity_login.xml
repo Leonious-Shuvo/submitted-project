@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/loginback"
+    android:animateLayoutChanges="true">
+
+    <EditText
+        android:id="@+id/lemail"
+        android:layout_width="246dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="161dp"
+        android:background="@drawable/edit_round"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/user"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingEnd="0dp"
+        android:paddingStart="10dp" />
+
+    <EditText
+        android:id="@+id/lpassword"
+        android:layout_width="245dp"
+        android:layout_height="46dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edit_round"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/pass"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingEnd="0dp"
+        android:paddingStart="10dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="166dp"
+        android:layout_marginStart="64dp"
+        android:text="@string/login"
+        android:background="@drawable/btn_round"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lemail"
+        android:layout_alignTop="@+id/login"
+        android:text="@string/signup"
+        android:background="@drawable/btn_round"
+        android:textColor="#fff"/>
+
+</RelativeLayout>

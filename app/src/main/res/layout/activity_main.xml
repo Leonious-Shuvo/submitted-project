@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/loginback">
+
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="230dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="230dp"
+        android:layout_height="39dp"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_round"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+    <EditText
+        android:id="@+id/CPassword"
+        android:layout_width="230dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="185dp"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_round"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="230dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="179dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress|textPersonName"
+        android:background="@drawable/edit_round"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Name"
+        android:layout_marginBottom="99dp"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/btn_round"
+        android:text="@string/button"
+        tools:text="Register"
+        android:textColor="#fff"/>
+
+
+    <Button
+        android:id="@+id/Backlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Register"
+        android:layout_marginEnd="82dp"
+        android:text="@string/login"
+        tools:text="Login"
+        android:background="@drawable/btn_round"
+        android:textColor="#fff"/>
+
+</RelativeLayout>
